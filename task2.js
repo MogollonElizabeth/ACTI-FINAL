@@ -7,7 +7,7 @@ export async function listUsers() {
         const response = await axios.get(SERVER_URL);
         const users = response.data;
 
-        // Convertir los datos a una lista de cadenas en el formato esperado
+        
         let formattedData = users.map(user => {
             return `{` +
                 `\n  id: ${user.id},` +
@@ -17,7 +17,6 @@ export async function listUsers() {
                 `\n},`;
         });
 
-        // Eliminar la última coma y añadir los corchetes de apertura y cierre
         
         formattedData = `[\n${formattedData.join('\n')}\n]`;
 
