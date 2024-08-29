@@ -21,6 +21,5 @@ export async function addUser(first_name, last_name, email) {
     }
 }
 
-addUser("Kai", "Nathaniel", "kai.n@example.org").then(user => {
-    console.log('Added user:', user);
+
 });
