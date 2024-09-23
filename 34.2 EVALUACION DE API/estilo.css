@@ -1,0 +1,22 @@
+/* Estilos por defecto (modo claro) */
+body {
+    margin-top: 25px;
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+}
